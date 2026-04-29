@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Activity Tracker</h1>
+   <h4>Level-2: Interactivity Implementation</h4>
+</header>
+
+<div class="container">
+
+    <!-- HOME SECTION -->
+    <div id="home">
+        <h3>HACKATHON OF STUDENT ACTIVITY TRACKER </h3>
+      <h2> <p>Login</p></h2>
+        <input type="Aarthi N" id="nameInput" placeholder="Enter your name">
+       <input type="1234" id="nameInput" placeholder="Password"><br>
+       <br> <button onclick="startApp()">Start</button>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="hidden">
+      <h4>HOME</h4>
+      <h2 id="welcomeText"></h2>
+      <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('activities')">Activities</button>
+      <button onclick="showSection('progress')">Progress</button>
+      <button onclick="showSection('project')">Project Details</button>
+    </nav>
+
+        <!-- ACTIVITIES SECTION -->
+        <section>
+            <h3>Activities</h3>
+            <ul id="activityList"></ul>
+        </section>
+
+        <!-- PROGRESS SECTION -->
+        <section class="progress-section">
+            <h3>Progress</h3>
+            <p id="progressText">0 / 0 Completed</p>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+            <p id="completionMsg"></p>
+        </section>
+
+        <!-- PROJECT DETAILS SECTION -->
+        <section class="project-details">
+            <h3>Project Details</h3>
+            <p><strong>Objective:</strong> Build an interactive activity tracker</p>
+            <p><strong>Technology:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Dynamic activity list</li>
+                <li>Mark tasks as completed</li>
+                <li>Real-time progress update</li>
+                <li>LocalStorage support</li>
+            </ul>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
